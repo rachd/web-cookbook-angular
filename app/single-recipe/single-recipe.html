@@ -1,0 +1,13 @@
+<div class="recipe">
+	<div class="recipe__header">
+		<h1 class="recipe__title">{{recipe.title}}</h1>
+	</div>
+	<div class="recipe__body">
+		<ul class="recipe__ingredients">
+			<li ng-repeat="ingredient in recipe.ingredients">{{ingredient}}</li>
+		</ul>
+		<ol class="recipe__directions">
+			<li ng-repeat="direction in recipe.directions">{{direction}}</li>
+		</ol>
+	</div>
+</div>

@@ -5,6 +5,9 @@
 
 	module.component("recipeCategory", {
 		templateUrl: "/app/recipe-category/recipe-category.html",
+		$routeConfig: [
+			{ path: ":id", component:"singleRecipe", name: "Single" }, //paths are relative to parent
+		],
 		controllerAs: "category",
 		controller: function() {
 			var category = this;
@@ -13,12 +16,9 @@
 				category.title = next.params.id;
 
 				category.recipes = [
-					"Lemon Bars",
-					"Also Lemon Bars"
+					"LemonBars",
+					"AlsoLemonBars"
 				];
-			  // return heroService.getHero(id).then(function(hero) {
-			  //   $ctrl.hero = hero;
-			  // });
 			};
 		}
 	});

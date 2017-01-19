@@ -8,7 +8,7 @@
 		$routeConfig: [
 			{ path: "/", component: "home", name: "Home" },
 			{ path: "/:id", component: "recipeCategory", name: "Category" },
-			{ path: "/single", component: "singleRecipe", name: "Single"},
+			{ path: "/:id/...", component: "recipeCategory", name: "SingleRecipe"},
 		// 	{ path: "/bread", component: "bread", name: "Bread" },
 		// 	{ path: "/meat", component: "meat", name: "Meat" },
 		// 	{ path: "/soup", component: "soup", name: "Soup" },

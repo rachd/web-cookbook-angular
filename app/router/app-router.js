@@ -7,8 +7,8 @@
 		templateUrl: "/app/router/app-router.html",
 		$routeConfig: [
 			{ path: "/", component: "home", name: "Home" },
-			{ path: "/:id", component: "recipeCategory", name: "Category" },
-			{ path: "/:id/...", component: "recipeCategory", name: "SingleRecipe"},
+			// { path: "/:id", component: "recipeCategory", name: "Category" },
+			{ path: "/:id/...", component: "recipeCategory", name: "Category"},
 		// 	{ path: "/bread", component: "bread", name: "Bread" },
 		// 	{ path: "/meat", component: "meat", name: "Meat" },
 		// 	{ path: "/soup", component: "soup", name: "Soup" },

@@ -9,12 +9,17 @@
 		controller: function() {
 			var category = this;
 
-			category.title = "Desserts";
+			category.$routerOnActivate = function(next, previous) {
+				category.title = next.params.id;
 
-			category.recipes = [
-				"Lemon Bars",
-				"Also Lemon Bars"
-			];
+				category.recipes = [
+					"Lemon Bars",
+					"Also Lemon Bars"
+				];
+			  // return heroService.getHero(id).then(function(hero) {
+			  //   $ctrl.hero = hero;
+			  // });
+			};
 		}
 	});
 }());

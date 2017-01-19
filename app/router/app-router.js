@@ -6,6 +6,7 @@
 	module.component("appRouter", {
 		templateUrl: "/app/router/app-router.html",
 		$routeConfig: [
+			{ path: "/", component: "home", name: "Home" },
 			{ path: "/:id", component: "recipeCategory", name: "Category" },
 			{ path: "/single", component: "singleRecipe", name: "Single"},
 		// 	{ path: "/bread", component: "bread", name: "Bread" },
@@ -15,7 +16,7 @@
 		// 	{ path: "/pasta-rice", component: "pastaRice", name: "PastaRice" },
 		// 	{ path: "/dessert", component: "dessert", name: "Dessert" },
 		// 	// { path: "/detail/:id/...", component: "movieDetails", name: "Details" }, ///... means child will provide more routing
-			{ path: "/**", redirectTo: ["Category"] }
+			{ path: "/**", redirectTo: ["Home"] }
 		]
 	});
 }());

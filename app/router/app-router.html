@@ -3,8 +3,14 @@
 		<div class="navbar-header">
 			<a class="navbar-brand" ng-link="['List']">Angular Cookbook</a>
 		</div>
-		<!-- <ul class="nav navbar-nav navbar-left">
+		<ul class="nav navbar-nav navbar-left">
 			<li>
+				<a ng-link="['Category']">Category</a>
+			</li>
+			<li>
+				<a ng-link="['Single']">Single</a>
+			</li>
+			<!-- <li>
 				<a ng-link="['Bread']">Bread</a>
 			</li>
 			<li>
@@ -21,14 +27,13 @@
 			</li>
 			<li>
 				<a ng-link="['Dessert']">Dessert</a>
-			</li>
-		</ul> -->
+			</li> -->
+		</ul>
 	</div>
 </nav>
 
 <div class="container">
 
-	<!-- <ng-outlet></ng-outlet> -->
-	<single-recipe></single-recipe>
+	<ng-outlet></ng-outlet>
 
 </div>

@@ -6,8 +6,8 @@
 	module.component("recipeCategory", {
 		templateUrl: "/app/recipe-category/recipe-category.html",
 		$routeConfig: [
-			{ path: ":id", component:"singleRecipe", name: "Single" }, //paths are relative to parent
-			{ path: "/all", component:"recipeCategoryList", name: "CategoryList" }
+			{ path: ":id", component:"singleRecipe", name: "Single" },
+			{ path: "/", component:"recipeCategoryList", name: "CategoryList" }
 		],
 		controllerAs: "category",
 		controller: function() {

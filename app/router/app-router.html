@@ -4,24 +4,9 @@
 			<a class="navbar-brand" ng-link="['Home']">Angular Cookbook</a>
 		</div>
 		<ul class="nav navbar-nav navbar-left">
-			<!-- <li>
-				<a ng-link="['Bread']">Bread</a>
+			<li ng-repeat="navitem in nav.categories">
+				<a ng-link="['Category', {id: navitem}, 'CategoryList']">{{navitem}}</a>
 			</li>
-			<li>
-				<a ng-link="['Meat']">Meat</a>
-			</li>
-			<li>
-				<a ng-link="['Soup']">Soup</a>
-			</li>
-			<li>
-				<a ng-link="['Vegetables']">Vegetables</a>
-			</li>
-			<li>
-				<a ng-link="['PastaRice']">Pasta & Rice</a>
-			</li>
-			<li>
-				<a ng-link="['Dessert']">Dessert</a>
-			</li> -->
 		</ul>
 	</div>
 </nav>

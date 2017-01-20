@@ -1,5 +1,13 @@
-<div class="home">
-	<div class="category__recipes" ng-repeat="category in home.categories">
-		<a ng-link="['Category', {id: category}, 'CategoryList']">{{category}}</a>
+<div class="row">
+	<div class="col-xs-12">
+		<h1>Angular Cookbook</h1>
+	</div>
+</div>
+<div class="home row">
+	<div class="home__recipes col-xs-12 col-sm-4" ng-repeat="category in home.categories">
+		<a ng-link="['Category', {id: category}, 'CategoryList']">
+			<img class="img-responsive" src="http://placehold.it/200x200">
+			<h2>{{category}}</h2>
+		</a>
 	</div>
 </div>

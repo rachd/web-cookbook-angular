@@ -1,0 +1,25 @@
+{
+  "name": "angular-cookbook",
+  "version": "1.0.0",
+  "description": "A cookbook SPA built with Angular 1.5 ```  npm install -g http-server  bower install http-server -o ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachd/web-cookbook-angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachd/web-cookbook-angular/issues"
+  },
+  "homepage": "https://github.com/rachd/web-cookbook-angular#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "http-server": "^0.9.0"
+  }
+}

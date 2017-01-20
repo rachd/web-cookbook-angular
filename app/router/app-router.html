@@ -7,6 +7,9 @@
 			<li ng-repeat="navitem in nav.categories">
 				<a ng-link="['Category', {id: navitem}, 'CategoryList']">{{navitem}}</a>
 			</li>
+			<li>
+				<a ng-link="['AddForm']">Add New</a>
+			</li>
 		</ul>
 	</div>
 </nav>

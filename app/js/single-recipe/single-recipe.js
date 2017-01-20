@@ -4,7 +4,7 @@
 	var module = angular.module("cookbook");
 
 	module.component("singleRecipe", {
-		templateUrl: "/app/single-recipe/single-recipe.html",
+		templateUrl: "/app/js/single-recipe/single-recipe.html",
 		controllerAs: "recipe",
 		controller: function() {
 			var recipe = this;

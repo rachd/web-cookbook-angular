@@ -4,7 +4,7 @@
 	var module = angular.module("cookbook");
 
 	module.component("appRouter", {
-		templateUrl: "/app/router/app-router.html",
+		templateUrl: "/app/js/router/app-router.html",
 		$routeConfig: [
 			{ path: "/", component: "home", name: "Home" },
 			{ path: "/:id/...", component: "recipeCategory", name: "Category" },
